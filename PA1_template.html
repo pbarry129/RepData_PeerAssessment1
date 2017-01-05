@@ -126,10 +126,24 @@ $(document).ready(function () {
 <p><strong>Loading and processing the data</strong></p>
 <pre class="r"><code># Load the  necessary packages
 
-library(dplyr)
-library(ggplot2)
-
-# Read and clean the data
+library(dplyr)</code></pre>
+<pre><code>## Warning: package 'dplyr' was built under R version 3.3.2</code></pre>
+<pre><code>## 
+## Attaching package: 'dplyr'</code></pre>
+<pre><code>## The following objects are masked from 'package:stats':
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>library(ggplot2)</code></pre>
+<pre><code>## Warning: package 'ggplot2' was built under R version 3.3.2</code></pre>
+<pre><code>## 
+## Attaching package: 'ggplot2'</code></pre>
+<pre><code>## The following object is masked _by_ '.GlobalEnv':
+## 
+##     diamonds</code></pre>
+<pre class="r"><code># Read and clean the data
 
 data&lt;-read.csv(&quot;activity.csv&quot;)
 data_clean&lt;-data[!is.na(data$steps),]
