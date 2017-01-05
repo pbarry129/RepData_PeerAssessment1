@@ -5,12 +5,6 @@ date: "5 January 2017"
 output: html_document
 ---
 
-```{r opts, echo = FALSE}
-knitr::opts_chunk$set(
-  fig.path = "images/"
-)
-```
-
 **Loading and processing the data**
 
 ```{r, results='asis'}
